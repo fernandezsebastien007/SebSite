@@ -80,6 +80,10 @@ nav a {
   font-size: 0.95rem;
 }
 
+nav a.active {
+  color: var(--gold-strong);
+}
+
 .hero {
   padding: 4.2rem 0 2.5rem;
 }
@@ -282,10 +286,6 @@ textarea:focus {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-#form-status {
-  min-height: 1.1rem;
 }
 
 .footer {
