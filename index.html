@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me | Rainbow Flush / ATLAS</title>
+    <title>Sebastien Fernandez | NFC Card</title>
     <meta
       name="description"
-      content="About Sebastien Fernandez: systems-focused engineering builder with the long-term Rainbow Flush / ATLAS strategy."
+      content="NFC virtual card for Sebastien Fernandez with quick links to About, Contact, and Share."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -17,132 +17,42 @@
         <span class="suit">♦</span>
         <span class="suit">♣</span>
         <span class="suit">♥</span>
-        <span class="brand-text">Rainbow Flush / ATLAS</span>
+        <span class="brand-text">Card / Business Card</span>
       </div>
       <nav>
-        <a class="active" href="index.html">About Me</a>
-        <a href="hire.html">Hire Me</a>
-        <a href="ventures.html">Ventures</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About Me</a>
+        <a href="about.html#contact">Contact Me</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero container">
-        <p class="eyebrow">Capability First</p>
-        <h1>
-          About Me<br />
-          <span>Engineer, Builder, Operator.</span>
-        </h1>
-        <p class="lead">
-          Mechanical Engineering graduate (CSULB, Dec 2025) focused on building systems that
-          perform under constraints. I like difficult technical problems, clear accountability,
-          and measurable outcomes.
-        </p>
-      </section>
-
-      <section class="container section" id="about">
-        <h2>How I Work</h2>
-        <div class="grid three">
-          <article class="card">
-            <h3>Systems & Fluid Thinking</h3>
-            <p>
-              Led a remote-operated submersible project, building ballast and propulsion-related
-              systems using pressure/displacement fundamentals while troubleshooting performance.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Design to Build Reality</h3>
-            <p>
-              Built SolidWorks parametric assemblies with tolerance/manufacturability focus
-              (25+ parts) and prepared designs for prototyping/testing.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Analytical Execution</h3>
-            <p>
-              Applied MATLAB and SQL for simulation, data integrity, and decision support—turning
-              technical analysis into practical next steps.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="container section" id="contact">
-        <h2>Contact Me</h2>
-        <p class="section-intro">Send a message directly with context and I’ll reply accordingly.</p>
-
-        <div class="intent-row" aria-label="Inquiry Type">
-          <button class="intent active" type="button" data-intent="Employer Opportunity">
-            Hire Me (Entry-Level Engineering)
-          </button>
-          <button class="intent" type="button" data-intent="Strategic Deal">
-            Strategic Deal (ATLAS / Equity-Aligned)
-          </button>
-          <button class="intent" type="button" data-intent="Advisor or Mentor Support">
-            Advisor / Mentor Support (ATLAS Fundamentals)
-          </button>
-        </div>
-
-        <div class="contact-grid">
-          <form
-            id="contact-form"
-            class="card"
-            action="https://formspree.io/f/xrerbwqq"
-            method="POST"
-          >
-            <input id="intent-input" name="intent" type="hidden" value="Employer Opportunity" />
-            <input id="contact-start" name="contact_start" type="hidden" value="" />
-            <input type="hidden" name="_subject" value="New website inquiry" />
-            <label class="hp-field" aria-hidden="true">
-              Leave this field empty
-              <input name="website" type="text" tabindex="-1" autocomplete="off" />
-            </label>
-            <label>
-              Name
-              <input name="name" type="text" required />
-            </label>
-            <label>
-              Company (optional)
-              <input name="company" type="text" />
-            </label>
-            <label>
-              Email
-              <input name="email" type="email" required />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">Send Message</button>
-            <p class="form-note">
-              This form submits through Formspree and includes your selected inquiry type.
-            </p>
-          </form>
-
-          <aside class="card">
-            <h3>Media</h3>
-            <ul>
-              <li>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/sebastien-fernandez-aa4743291/" target="_blank" rel="noreferrer"
-                  >Profile</a
-                >
-              </li>
-              <li>
-                Instagram:
-                <a href="https://www.instagram.com/rainbowflushgroup/?hl=en" target="_blank" rel="noreferrer"
-                  >Rainbow Flush Group</a
-                >
-              </li>
-            </ul>
-          </aside>
-        </div>
+      <section class="hero container product-hero">
+        <article class="product-card">
+          <img
+            class="product-image"
+            src="Profile.png"
+            alt="Portrait of Sebastien Fernandez"
+          />
+          <p class="eyebrow">NFC Virtual Card</p>
+          <h1 class="product-name">
+            <a href="about.html">Sebastien Fernandez &gt;</a>
+          </h1>
+          <p class="product-summary">
+            Mechanical engineering builder with a systems mindset—designed for complex problems,
+            disciplined execution, and long-term value creation.
+          </p>
+          <div class="cta-row card-actions">
+            <a class="btn btn-primary" href="about.html">About Me</a>
+            <a class="btn btn-secondary" href="about.html#contact">Contact Me</a>
+            <button class="btn btn-secondary" id="share-card-btn" type="button">Share Card</button>
+          </div>
+          <p id="share-status" class="muted share-status" aria-live="polite"></p>
+        </article>
       </section>
     </main>
 
     <footer class="container footer">
-      <p>© <span id="year"></span> Your Name — Building ATLAS toward Rainbow Flush.</p>
+      <p>© <span id="year"></span> Sebastien Fernandez.</p>
     </footer>
 
     <script src="script.js"></script>

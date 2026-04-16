@@ -88,6 +88,46 @@ nav a.active {
   padding: 4.2rem 0 2.5rem;
 }
 
+.product-hero {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 210px);
+  padding-top: 3rem;
+}
+
+.product-card {
+  width: min(460px, 100%);
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent), var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(194, 198, 204, 0.24);
+}
+
+.product-name {
+  margin-top: 0.35rem;
+  font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+}
+
+.product-name a {
+  color: var(--gold-strong);
+}
+
+.product-summary {
+  margin: 0.65rem auto 0;
+  max-width: 52ch;
+  color: var(--text);
+}
+
 .eyebrow {
   color: var(--gold);
   letter-spacing: 0.06em;
@@ -308,5 +348,9 @@ textarea:focus {
 
   .hero {
     padding-top: 2.5rem;
+  }
+
+  .product-hero {
+    min-height: auto;
   }
 }
