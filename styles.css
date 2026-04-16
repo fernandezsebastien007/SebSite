@@ -354,3 +354,16 @@ textarea:focus {
     min-height: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .product-card {
+    width: min(380px, 100%);
+    padding: 1rem;
+  }
+
+  .product-image {
+    width: 86%;
+    margin: 0 auto;
+    display: block;
+  }
+}
